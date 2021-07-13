@@ -23,7 +23,7 @@ class Grid {
         }
     }
     
-    drawGrid(array) {
+    static drawGrid(array) {
         for(var a=0;a<array.length;a++) {
             ctx.fillStyle = array[a].color;
             ctx.fillRect(array[a].x,array[a].y,array[a].s,array[a].s);

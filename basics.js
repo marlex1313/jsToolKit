@@ -13,13 +13,13 @@ class Sceene  {
             canvas.height = window.innerHeight;
         }
         init();
-        this.ctx = canvas.getContext('2d');
         this.canvas = canvas;
+        return canvas.getContext('2d');
     }
 }
 
 //to use the canvas :
-//var sceene = new Sceene().ctx;
+//var sceene = new Sceene();
 
 class Vector2 {
     constructor(x,y) {
